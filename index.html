@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
+<!-- Fontes do Google -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Breno nunes">
@@ -10,12 +18,15 @@
     <meta name="robots" content="index, follow">
 
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Portfólio do breno</title>
 </head>
 <body>
 <!---cabeçalho da pagina-->
 <header>
+  <div class="menu-content">
+    
 <a href="index.html" id="titulo">Portifolio</a>
 <nav>
     <ul class="menu-list">
@@ -25,12 +36,17 @@
         <li><a href="#contact">contatos</a></li>
     </ul>
 </nav>
+
+
+  </div>
+
 </header>
 <!-- seção principal -->
 <main>
-<section id="hero" class="hero-container">
-  <article>
-    <p>👋 Olá, eu sou o Breno</p>
+<section id="hero" class="section-container hero-container">
+<article  class="hero-content"> 
+
+     <span>👋 Olá, eu sou o Breno</span>
     <h1>Desenvolvedor Full Stack</h1>
     <p>Transformo ideias em,<br> 
        código e crio experiências digitais incríveis.</p>
@@ -38,71 +54,33 @@
     <div class="buttons-container">
       <a href="#contact" class="botao">Entre em contato</a>
       <a href="#about" class="botao-outline">Saiba mais...</a>
-    </div>
+ 
+   
   </article>
+  </div>
 
   <figure class="hero-image">
-    <img src="./assets/img/avatar_dev_man.svg" 
+    <img src="./Gemini_Generated_Image_k82nvak82nvak82n.png" 
          alt="Foto do autor do site" 
          class="float-animation">
   </figure>
+
+
+
 </section>
 
     <section id="about" class="section-container about-container">
       
-      <figure class="about-image">
-        <img src="./assets/img/foto_dev_man.svg" 
-             alt="Foto do perfil do autor" 
-             class="float-animation">
-      </figure>
-
-      <article class="about-content">
-        <h2>Sobre mim</h2>
-        <p>Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Natus minus perspiciatis
-        reprehenderit error voluptatibus labore
-        assumenda doloremque quibusdam sequi?
-        Distinctio autem sed laudantium nostrum
-        reprehenderit eligendi animi adipisci
-        a neque.</p>
-      </article>
-
+     
     </section>
 
 
 <section id="projects" class="section-container projects-container">
       <h2>Meus Projetos</h2>
-
+    
       <div class="swiper projects-swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-
-            <article class="project-card">
-              <figure class="project-image">
-                <img src="./icons/languages/github.svg" 
-                     alt="Ícone Github">
-              </figure>
-              
-              <div class="project-content">
-                <h3>Projeto Github</h3>
-                <p>Projeto desenvolvido no GitHub</p>
-                
-                <div class="project-tags">
-                  <span class="tag">GitHub</span>
-                </div>
-                
-                <div class="project-buttons">
-                  <a href="#" target="_blank" class="botao botao-sm">
-                    GitHub
-                  </a>
-                  <a href="#" target="_blank" class="botao-outline botao-sm">
-                    Deploy
-                  </a>
-                </div>
-              </div>
-            </article>
-
-          </div>
+         
         </div>
 
         <div class="swiper-button-next"></div>
@@ -134,7 +112,9 @@
     </div>
   </article>
 
-  <form id="formulario">
+  <form id="formulario" action="https://formsubmit.co/8eb5e95447721337f3fa41347bd1c86d" method="POST">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+<input type="hidden" name="_captcha" value="false">
 
     <label for="nome">Nome</label>
     <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
@@ -154,6 +134,7 @@
 
     <button class="botao" type="submit">Enviar Mensagem</button>
     
+    
   </form>
   
 </section>
@@ -170,10 +151,17 @@
     desenvolvido por breno nunes 
 
 </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./assets/js/script.js"></script>
 
 
     
 
 </body>
+<div class="video-background-container">
+    <video autoplay loop muted playsinline class="video-background">
+        <source src="./236105_medium.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+</div>
 </html>
