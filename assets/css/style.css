@@ -710,10 +710,17 @@ form span {
         gap: var(--spacing-md);
     }
     .about-buttons-data .botao { margin: 0 auto; }
+     .botao,
+    .botao-outline {
+        width: 100%; /* Ocupa a largura total do container pai */
+        display: block;
+        padding: 0.75rem 1rem; /* Reduz um pouco o padding lateral */
+        font-size: 0.9rem; /* Diminui levemente a fonte se necessário */
+        white-space: normal; /* Permite que o texto quebre linha se for muito longo */
+        word-wrap: break-word;
+    }
 }
-.botao-outline{ 
-    
-}
+
 
 @media screen and (max-width: 768px) {
     .contact-container {
@@ -727,6 +734,11 @@ form span {
     .project-card {
         height: auto;
         min-height: 28rem;
+    }
+    .buttons-container {
+        flex-direction: column; 
+        width: 100%;
+        gap: var(--spacing-sm);
     }
     .botao,
     .botao-outline {
